@@ -1,0 +1,190 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <RootNamespace>Navigation_Menu_App</RootNamespace>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\img_about.png" />
+    <None Remove="Assets\img_acoustic.png" />
+    <None Remove="Assets\img_album.png" />
+    <None Remove="Assets\img_arrow.png" />
+    <None Remove="Assets\img_artist.png" />
+    <None Remove="Assets\img_electronic.png" />
+    <None Remove="Assets\img_exit.png" />
+    <None Remove="Assets\img_folder.png" />
+    <None Remove="Assets\img_genre.png" />
+    <None Remove="Assets\img_hiphop.png" />
+    <None Remove="Assets\img_history.png" />
+    <None Remove="Assets\img_home.png" />
+    <None Remove="Assets\img_hotkey.png" />
+    <None Remove="Assets\img_input.png" />
+    <None Remove="Assets\img_jazz.png" />
+    <None Remove="Assets\img_metal.png" />
+    <None Remove="Assets\img_movies.png" />
+    <None Remove="Assets\img_music.png" />
+    <None Remove="Assets\img_playlist.png" />
+    <None Remove="Assets\img_pop.png" />
+    <None Remove="Assets\img_rock.png" />
+    <None Remove="Assets\img_search.png" />
+    <None Remove="Assets\img_setting.png" />
+    <None Remove="Assets\img_songs.png" />
+    <None Remove="Assets\max_def.png" />
+    <None Remove="Assets\max_mo.png" />
+    <None Remove="Assets\shutdown_def.png" />
+    <None Remove="Assets\shutdown_mo.png" />
+    <None Remove="Fonts\Orbitron-Medium.ttf" />
+    <None Remove="Fonts\Roboto-Light.ttf" />
+    <None Remove="Images\Admin.png" />
+    <None Remove="Images\Admin_button.png" />
+    <None Remove="Images\Admin_change.png" />
+    <None Remove="Images\email.png" />
+    <None Remove="Images\Exit.png" />
+    <None Remove="Images\Logo.png" />
+    <None Remove="Images\Password.png" />
+    <None Remove="Images\Password_Light.png" />
+    <None Remove="Images\phone.png" />
+    <None Remove="Images\sclose_def.png" />
+    <None Remove="Images\sclose_mo.png" />
+    <None Remove="Images\User.png" />
+    <None Remove="Images\Username.png" />
+    <None Remove="Images\Username_Light.png" />
+    <None Remove="Images\User_button.png" />
+    <None Remove="Images\User_change.png" />
+    <None Remove="Images\website.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\Password_Light.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CommunityToolkit.Mvvm" Version="8.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.5">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="7.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.5">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\img_acoustic.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\img_about.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\img_album.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\img_arrow.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\img_artist.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\img_electronic.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\img_exit.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\img_folder.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\img_genre.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\img_hiphop.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\img_history.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\img_home.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\img_hotkey.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\img_input.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\img_jazz.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\img_metal.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\img_movies.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\img_music.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\img_playlist.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\img_pop.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\img_rock.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\img_search.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\img_setting.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\img_songs.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\max_def.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\max_mo.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\shutdown_def.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\shutdown_mo.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\Orbitron-Medium.ttf">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\Roboto-Light.ttf">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Admin.png" />
+    <Resource Include="Images\Admin_button.png" />
+    <Resource Include="Images\Admin_change.png" />
+    <Resource Include="Images\email.png" />
+    <Resource Include="Images\Exit.png" />
+    <Resource Include="Images\Logo.png" />
+    <Resource Include="Images\Password.png" />
+    <Resource Include="Images\phone.png" />
+    <Resource Include="Images\sclose_def.png" />
+    <Resource Include="Images\sclose_mo.png" />
+    <Resource Include="Images\User.png" />
+    <Resource Include="Images\Username.png" />
+    <Resource Include="Images\Username_Light.png" />
+    <Resource Include="Images\User_button.png" />
+    <Resource Include="Images\User_change.png" />
+    <Resource Include="Images\website.png" />
+  </ItemGroup>
+
+</Project>
